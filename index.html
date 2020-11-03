@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Coding Quiz Challenge</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<!--hello note-->
+<body>
+        <!--this is the start container-->
+    <div class="container">
+        <h1 class="welcome">Are you ready?</h1>
+        <div id="start"> 
+                    <button id="start">Start Quiz</button></div>
+        <div id="quiz" style="display: none">  
+            <div id="question"></div> 
+            <div id="choices">
+                <div class="choice" Id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" Id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" Id="C" onclick="checkAnswer('C')"></div>
+                <div class="choice" Id="D" onclick="checkAnswer('D')"></div>
+                <div class="choice" Id="E" onclick="checkAnswer('E')"></div>
+                </div>
+        <!-- create timer -->
+        <div id="timer">
+            <div id="counter">60</div>
+            <div id="countdown"></div>
+        </div>
+        <!--keep track of score -->
+        <div id="progress">
+        </div>
+        <div id="score"></div>
+    </div>
+    
+    <!-- script-->
+    <script src="./assets/javascript/script.js"></script>
+</body>
+
+</html>
