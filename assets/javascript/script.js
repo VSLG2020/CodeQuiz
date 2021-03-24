@@ -1,23 +1,23 @@
 //select all elements by using a get element method. 
-var start =document.getElementById("start");
-var quiz =document.getElementById("quiz");
-var question =document.getElementById("question");
-var choiceA =document.getElementById("A");
-var choiceB =document.getElementById("B");
-var choiceC =document.getElementById("C");
-var choiceD =document.getElementById("D");
-var choiceE =document.getElementById("E");
-var timer =document.getElementById("timer");    
-var counter =document.getElementById("counter");
-var countdown =document.getElementById("countdown");
+var questionEl = document.getElementById("question");
+var answerEl = document.getElementById("answer");
+var scoreEl = document.getElementById("score");
+var timerEl = document.getElementById("timer");
+//start
+var start = document.getElementById("start");
+//quiz
+var quiz = document.getElementById("quiz");
+//timer
+var counter = document.getElementById("counter");
+var countdown = document.getElementById("countdown");
 var progress = document.getElementById("progress");
-var score = document.getElementById("score");
 
-//CREATE QUESTIONS 
+
+//CREATE quizQUESTIONS 
 
 //use array
 
-let questions=[
+let quizQuestions = [
     {
         question: "this is question 1?",
         choiceA: "answer 1",
@@ -65,23 +65,41 @@ let questions=[
     }
 ]
 
-//CREATE variables for questions
-var lastQuestion = questions.length -1;
-let runningQuestion = 0; 
-let count =0;
+//CREATE variables for quizQuestions
+var lastQuestion = quizQuestions.length - 1;
+let runningQuestion = 0;
+let count = 0;
 let timer;
-let score =0;
+let answer;
+let score = 0;
 
 //render question
+function questionEl() {
+    let q = questions[runningQuestion];
 
-//start quiz
+    question.innerHTML = "<p>" + q.question + "</p>";
+    qImg.innerHTML = "<img src=" + q.imgSrc + ">";
+    choiceA.innerHTML = q.choiceA;
+    choiceB.innerHTML = q.choiceB;
+    choiceC.innerHTML = q.choiceC;
+}
+
+start.addEventListener("click", startQuiz);
+//start quiz 
+function startQuiz() {
+
+    document.getElementById("start").classList.add("hidden");
+    document.getElementById("quiz").classList.remove("hidden");
+    
+  };
+
 
 //render progress
 
 //render counter
 // Timer that counts down from 60
 function countdown() {
-    var timeLeft = 60;
+    var timeLeft = 60;}
 
 //check answer
 
