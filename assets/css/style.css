@@ -1,17 +1,56 @@
+* {
+    box-sizing: border-box;
+}  
+
 body {
     font-size: 20px;
     font-family: monospace;
 }
 
-#container {
+header {
+    text-align: center;
+    padding: 50px 50px 50px;
+    background-color: rgba(240, 241, 243, 0.637);
+    border: 10px solid lightblue;
+}
+
+header h1{
+    color: green;
+    margin: 10px 10px 5px; 
+    font-size: 3rem;
+    border: 2px dotted;
+    background: lawngreen;
+}
+
+header p{
+ color:darkred;
+ text-align: center;
+ font-size: normal;
+}
+
+.container {
     margin: 20px auto;
     background-color: white;
     height: 300px;
     width: 700px;
     border-radius: 5px;
     box-shadow: 0px 5px 15px 0px;
-    position: relative;
+    display: inherit;
 }
+
+.container h1{
+    margin: 1px 0px 5px;
+    border: 10px solid lightgrey;
+    background: lightblue;
+    text-align: center;
+}
+
+.container p{
+    margin: 60px 0px 60px;
+    font-size: 2rem;
+    text-align: center;
+}
+
 
 #start {
     font-size: 1.5em;
@@ -20,8 +59,9 @@ body {
     border: 2px solid lightgrey;
     text-align: center;
     cursor: pointer;
-    color: lightgrey;
+    color: lightblue;
     width: fit-content;
+    margin: 10px 250px 0px;
 } 
 #start:hover {
     border: 3px solid lightseagreen;
