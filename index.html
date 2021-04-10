@@ -14,40 +14,68 @@
     <header>
         <h1 class="welcome">Welcome Easy Street Quiz</h1>
         <p> A quiz where the answers are given to you! </p>
+        <div id="highscores" class="highscore"> High Scores!</div>
+        <div id="timer" class="counter">You Have
+            <span id="timeleft">60</span> seconds!
+        </div>
+        </div>
     </header>
     <!--this is the intro-->
-     <!-- Intro to Quiz -->
-     <div id="intro_container"  class="container">
+    <!-- Intro to Quiz -->
+    <div id="intro_container" class="intro container">
         <h1>Easy Street</h1>
         <p>Ready To Score A 100!?</p>
-        <button id="start" class="btn">Start Quiz</button>
+        <button id="start-btn" class="start-btn btn">Start Quiz</button>
     </div>
     <!--this is the start container-->
-    <div id="start_container" class="container">
-        <div id="quiz" style="display: none">
-            <div id="question">
-            <div id="choices">
-                <div class="choice" Id="A" onclick="checkAnswer('A')"></div>
-                <div class="choice" Id="B" onclick="checkAnswer('B')"></div>
-                <div class="choice" Id="C" onclick="checkAnswer('C')"></div>
-                <div class="choice" Id="D" onclick="checkAnswer('D')"></div>
-                <div class="choice" Id="E" onclick="checkAnswer('E')"></div>
+    <div id="quiz" class="quiz container hide ">
+        <div id="questions" class="questions ">
+            <h1>Question:</h1>
+            <div id="answer-buttons" class="btn-grid">
+                <button id="1" class="btn">Answer 1</button>
+                <button id="2" class="btn">Answer 2</button>
+                <button id="3" class="btn">Answer 3</button>
+                <button id="4" class="btn">Answer 4</button>
             </div>
-            <!-- create timer -->
-            <div id="timer">
-                <div id="counter">60</div>
-                <div id="countdown"></div>
-            </div>
-            <!--keep track of score -->
-            <div id="progress">
-            </div>
-            <div id="score"></div>
+
         </div>
-        </div>
+        <div class="controls">
+            <!-- <button id="start-btn" class="start-btn btn">Start</button> -->
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+            <div id="progress" class="progress">
+                Your Current Progress
+            </div>
+
         </div>
 
-        <!-- script-->
-        <script src="assets\javascript\script.js"></script>
+    </div>
+
+    <!-- script-->
+    <script src="assets\javascript\script.js"></script>
 </body>
 
 </html>
+
+
+<!-- <div id="start_container" class="container">
+    <div id="quiz" style="display: none">
+        <div id="question">
+        <div id="choices">
+            <div class="choice" Id="A" onclick="checkAnswer('A')"></div>
+            <div class="choice" Id="B" onclick="checkAnswer('B')"></div>
+            <div class="choice" Id="C" onclick="checkAnswer('C')"></div>
+            <div class="choice" Id="D" onclick="checkAnswer('D')"></div>
+            <div class="choice" Id="E" onclick="checkAnswer('E')"></div>
+        </div>
+         create timer -->
+<!-- <div id="timer">
+            <div id="counter">60</div>
+            <div id="countdown"></div>
+        </div>
+        keep track of score
+        <div id="progress">
+        </div>
+        <div id="score"></div>
+    </div>
+    </div> -->
+<!-- </div> -->

@@ -52,7 +52,17 @@ header p{
 }
 
 
-#start {
+
+.btn-grid {
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    gap: 10px;
+    margin: 20px;
+    padding: 5px 10px;
+}
+
+.btn {
     font-size: 1.5em;
     font-weight: bolder;
     word-break: break-all;
@@ -60,9 +70,37 @@ header p{
     text-align: center;
     cursor: pointer;
     color: lightblue;
-    width: fit-content;
-    margin: 10px 250px 0px;
+    /* margin: 10px 250px 0px; */
 } 
+ 
+.btn:hover{
+    border: 3px solid lightseagreen;
+    color: lightseagreen;
+    width: fit-content;
+}
+#answer-btns {
+    gap: 8px;
+    margin: flex;
+    padding: 0 10px 10px;
+    float: inline-end;
+    display: flow-root;
+}
+.controls {
+
+    /* display: float; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+      /* height: 500px; */
+   
+    text-align: center;
+    padding: 250px 10px 10px
+}
+
+.hide {
+    display: none;
+}
+
 #start:hover {
     border: 3px solid lightseagreen;
     color: lightseagreen;
@@ -121,12 +159,28 @@ header p{
 }
 
 #timer {
-    position: absolute;
+    /* position: absolute; */
     height: 100px;
-    width: 200px;
+    /* width: 200px; */
     bottom: 0px;
     text-align: center;
+    border:seagreen solid 2px;
+    width: fit-content;
+    margin: 10px 10px 10px;
+    padding: 10px 10px 10px;
 }
+#highscores {
+    /* position: absolute; */
+    /* height: 100px; */
+    /* width: 200px; */
+    bottom: 0px;
+    text-align: center;
+    border:seagreen solid 2px;
+    width: fit-content;
+    padding: 10px 10px 10px;
+    margin: 10px;
+}
+
 
 #counter {
     font-size: 3em;
